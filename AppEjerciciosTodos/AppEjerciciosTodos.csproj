@@ -58,6 +58,12 @@
     <Compile Include="frmArea_Triangulo.Designer.cs">
       <DependentUpon>frmArea_Triangulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCacularFactorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCacularFactorial.Designer.cs">
+      <DependentUpon>frmCacularFactorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConvMetrosaPies.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmArea_Triangulo.resx">
       <DependentUpon>frmArea_Triangulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCacularFactorial.resx">
+      <DependentUpon>frmCacularFactorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConvMetrosaPies.resx">
       <DependentUpon>frmConvMetrosaPies.cs</DependentUpon>
