@@ -111,5 +111,11 @@ namespace AppEjerciciosTodos
             area = Math.Sqrt(sp * (sp - a) * (sp - b) * (sp - c));
             return area;
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

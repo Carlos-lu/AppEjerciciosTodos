@@ -137,6 +137,7 @@
             this.btnSalir.TabIndex = 10;
             this.btnSalir.Text = "&SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmArea_Triangulo
             // 
