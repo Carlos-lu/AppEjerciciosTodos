@@ -16,7 +16,7 @@ namespace AppEjerciciosTodos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmConvMetrosaPies());
+            Application.Run(new frmCacularFactorial());
         }
     }
 }

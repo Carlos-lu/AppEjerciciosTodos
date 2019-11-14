@@ -35,11 +35,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.txtFactorial = new System.Windows.Forms.TextBox();
+            this.btnNUEVO = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(48, 122);
+            this.btnCalcular.Location = new System.Drawing.Point(12, 79);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(75, 23);
             this.btnCalcular.TabIndex = 0;
@@ -49,21 +50,22 @@
             // 
             // txtSalir
             // 
-            this.txtSalir.Location = new System.Drawing.Point(168, 122);
+            this.txtSalir.Location = new System.Drawing.Point(216, 79);
             this.txtSalir.Name = "txtSalir";
             this.txtSalir.Size = new System.Drawing.Size(75, 23);
             this.txtSalir.TabIndex = 1;
             this.txtSalir.Text = "SALIR";
             this.txtSalir.UseVisualStyleBackColor = true;
+            this.txtSalir.Click += new System.EventHandler(this.txtSalir_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(116, 11);
+            this.label1.Location = new System.Drawing.Point(67, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 13);
+            this.label1.Size = new System.Drawing.Size(235, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "CALCULAR EL FACTORIAL";
+            this.label1.Text = "CALCULAR EL FACTORIAL  DE UN NUMERO ";
             // 
             // label2
             // 
@@ -77,7 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 79);
+            this.label3.Location = new System.Drawing.Point(45, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 13);
             this.label3.TabIndex = 4;
@@ -93,16 +95,28 @@
             // 
             // txtFactorial
             // 
-            this.txtFactorial.Location = new System.Drawing.Point(157, 76);
+            this.txtFactorial.Location = new System.Drawing.Point(157, 128);
             this.txtFactorial.Name = "txtFactorial";
+            this.txtFactorial.ReadOnly = true;
             this.txtFactorial.Size = new System.Drawing.Size(100, 20);
             this.txtFactorial.TabIndex = 6;
+            // 
+            // btnNUEVO
+            // 
+            this.btnNUEVO.Location = new System.Drawing.Point(109, 79);
+            this.btnNUEVO.Name = "btnNUEVO";
+            this.btnNUEVO.Size = new System.Drawing.Size(86, 23);
+            this.btnNUEVO.TabIndex = 7;
+            this.btnNUEVO.Text = "NUEVO";
+            this.btnNUEVO.UseVisualStyleBackColor = true;
+            this.btnNUEVO.Click += new System.EventHandler(this.btnNUEVO_Click);
             // 
             // frmCacularFactorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 154);
+            this.ClientSize = new System.Drawing.Size(322, 177);
+            this.Controls.Add(this.btnNUEVO);
             this.Controls.Add(this.txtFactorial);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.label3);
@@ -126,5 +140,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.TextBox txtFactorial;
+        private System.Windows.Forms.Button btnNUEVO;
     }
 }
